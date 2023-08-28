@@ -8,6 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -euxo pipefail
     steps:
       - name: Use Node.js 16
         uses: actions/setup-node@v2
